@@ -1,0 +1,335 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">     
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    
+    <script src="scripts/portfolio.js"></script>
+    
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-light bg-light" id="topNavbar">
+      <button class="btn" id="sidebarCollapse"><i class="fa fa-bars"></i></button>
+        <span class="navbar-brand mb-0 h1"></span>
+        <span class="navbar-text teal-text">
+           <strong>Shalini Bhandare | Frontend Developer</strong>
+          </span>
+      </nav>
+
+    <!-- Vertical navbar -->
+<div class="vertical-nav bg-light" id="sidebar">
+    <a href="#intro">
+    <div class="py-4 px-3 mb-4 bg-light">
+      <div class="media d-flex align-items-center"><img src="images/ShaliniBhandare.JPG" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+        <div class="media-body">
+          <h4 class="m-0 teal-text">Shalini Bhandare</h4>
+          <p class="font-weight-light text-muted mb-0">Frontend Developer</p>
+        </div>
+      </div>
+    </div>
+    </a>
+  
+    <!-- <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p> -->
+  
+    <ul class="nav flex-column bg-white mb-0">             
+
+      <li class="nav-item">
+        <a href="#about" class="nav-link waves-effect waves-dark teal-text">
+                <div class="row">
+                  <div class="col-md-2">
+                      <i class="fa fa-user fa-2x green mr-3"></i>
+                  </div>
+                  <div class="col-md-2">
+                      <span class="col">About</span>
+                  </div>
+                </div>
+              </a>      
+            </li>
+      <li class="nav-item">
+        <a href="#projects" class="nav-link waves-effect waves-dark teal-text">  
+                  <div class="row">
+                      <div class="col-md-2">
+                          <i class="fa fa-address-card fa-2x blue mr-3"></i>
+                      </div>
+                      <div class="col-md-2">
+                          <span class="col">Projects</span>
+                      </div>
+                  </div>                
+              </a>
+      </li>
+      <li class="nav-item">
+        <a href="#skills" class="nav-link waves-effect waves-dark teal-text">
+            <div class="row">
+                <div class="col-md-2">
+                  <i class="fa fa-bar-chart mr-3 voilet fa-2x"></i>
+                </div>
+                <div class="col-md-2">
+                  <span class="col">Skills</span>  
+                </div>
+            </div>                
+          </a>
+      </li>
+      <li class="nav-item">
+        <a href="#Highlights" class="nav-link waves-effect waves-dark teal-text">
+            <div class="row">
+                <div class="col-md-2">
+                  <i class="fa fa-star mr-3 red fa-2x"></i>
+                </div>
+                <div class="col-md-2">
+                  <span class="col">Highlights</span>
+                </div>
+              </div>                  
+          </a>
+      </li>
+      <li class="nav-item">
+        <a href="#education" class="nav-link waves-effect waves-dark teal-text">
+            <div class="row">
+                <div class="col-md-2">
+                <i class="fa fa-graduation-cap mr-3 yellow fa-2x"></i>
+                </div>
+                <div class="col-md-2">
+                  <span class="col">Education</span> 
+                </div>
+              </div>                 
+          </a>
+      </li>
+      <li class="nav-item">
+        <a href="#contact" class="nav-link waves-effect waves-dark teal-text">
+            <div class="row">
+                <div class="col-md-2">
+                <i class="fa fa-phone mr-3 fa-2x brown"></i>
+                </div>
+                <div class="col-md-2">
+                  <span class="col">Contact</span>
+                </div> 
+            </div>                 
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="https://drive.google.com/open?id=1gjxqRcohIF6DkIO-iwvBRbNvVgkezmeC" class="nav-link waves-effect waves-dark teal-text">
+              <div class="row">
+                  <div class="col-md-2">
+                    <i class="fa fa-id-card-o mr-3 fa-2x dark-gray"></i>
+                  </div>
+                  <div class="col-md-2">
+                <span class="col">Resume</span>
+              </div>
+              </div>                  
+                </a>
+        </li>
+    </ul>     
+  </div>
+  <!-- End vertical navbar -->
+  
+  
+  <!-- Page content holder -->
+  <main>
+  <div  class="page-content p-5" id="content">
+    <!-- Toggle button -->
+     <!-- <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 menu_btn"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold"></small></button>  -->
+     
+          <section id="intro" class="section scrollspy full-height">
+                <div class="overlay"></div>
+                <div class="container">
+                  <h2 class="main-pg">I want to <span class="teal">make things</span><br>that <span class="underline">make a difference</span>.</h2>
+                </div>
+            </section>
+
+        <section id="about" class="section scrollspy">
+            <h3 class="card white-text teal">About</h3>
+            <div class="container flow-text">
+              <blockquote>
+                <h2>A frontend developer with a passion for thoughtful UI design, collaboration, and quick learner.</h2>
+              </blockquote>
+              <p>A Front End Developer well versed in various frontend technologies like HTML, CSS, Bootstrap, Javascript,
+                AngularJS, Angular 7, Backbase 5.5.1.x/5.6, Backbase 6, Widget collection 2, GIT Lab with the professional
+                experience of 1.8 years in development of Web applications across Banking domain.</p>
+                <p>Have worked on various phases of SDLC in Agile methodology such as Analysis, Design, Development, Debugging
+                  & Technical Documentation.</p>
+                <p>Lead service integration part at Offshore and Onshore.</p>
+                <p>Excellent skills to analyze & deliver work with maintaining code quality abiding timelines.</p>
+              
+            </div>
+          </section>
+
+          <section id="projects" class="section scrollspy">
+                <h3 class="card white-text teal">Projects</h3>
+                <div class="m-4">
+                    <button class="accordion"><h4>Training Management</h4></button>
+                <div class="panel">
+                  <p>
+                    <p>
+                      Training management portal for Capco employees which helps employees to track trainings ongoing in Capco.
+                      </p>
+                      <strong>Responsibilities:-</strong>                      
+                      <p>
+                          Requirement gathering, analysis of user stories, UI development, form validations and authentications, service
+                          integration, technical documentation.
+                          Developed various modules such as Admin module, trainer module & learner module with respect to various user
+                          roles.
+                      </p>   
+                      <strong>Technology Used:</strong>  
+                      <p>HTML5, CSS3, Bootstrap4, Angular 7.</p>              
+                  </p>
+                </div>
+                
+                <button class="accordion"><h4>Yoma Digital Bank</h4></button>
+                <div class="panel">
+                    <p>
+                      <p>
+                          Developing a mobile banking application for performing core digital banking activities like – Personalized/Non-
+                          Personalized Login, Fund Transfer, Transaction List, Mobile Top-up, Smart signup, Create FD, wave wallet.
+                      </p>
+                        <strong>Responsibilities:-</strong>
+                        <p>
+                            Worked on various features of Yoma Banking Application including Personalize account, Create FD, Send Money,
+                            and Dashboard.
+                            Worked closely with client at onsite (Yangon, Myanmar).
+                            Involved in various responsibilities such as requirement analysis, designing, development, service integration &
+                            defect fixing.
+                            Streamlined & improved service integration process in Backbase6 in Yoma Bank Application.
+                        </p>
+                        <strong>Technology Used: </strong>
+                        <p>HTML5, CSS3, Bootstrap, Angular js, Backbase-6, WC2-collection.</p>
+                    </p>
+                </div>
+                
+                <button class="accordion"><h4>Travel Portal</h4></button>
+                <div class="panel">
+                  <p>
+                    <p>
+                        Travel Portal for Capco officials which were built to handle travel requests. There were multiple modules such as
+                        cab/flight accommodation & Forex bookings.
+                    </p>
+                      <strong>Responsibilities:-</strong>
+                      <p>
+                          Requirement gathering, analysis of user stories, UI development, form validations and authentications, service
+                          integration, technical documentation.
+                          Primarily responsible for development of login, register dashboard & booking module.    
+                      </p>
+                      <strong>Technology Used:</strong>
+                      <p>HTML5, CSS3, Bootstrap 4, Angular Js.</p>                                             
+                  </p>
+                </div>
+                </div>                
+              </section>
+
+              <section id="skills" class="section scrollspy">
+                <h3 class="card white-text teal">Skills</h3>
+                <div class="card shadow m-4">
+                    <div class="card-content">
+                      <h4 class="brown-text light">HTML</h4>
+                      <div class="row text-center">
+                        <div class="col s4 m2"><img alt="" src="images/html5.png" class="responsive-img">HTML5</div>
+                        <div class="col s4 m2"></div>
+                        <div class="col s4 m2"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card shadow m-4">
+                      <div class="card-content">
+                        <h4 class="brown-text light">CSS</h4>
+                        <div class="row text-center">
+                          <div class="col s4 m2"><img alt="" src="images/css3.png" class="responsive-img">CSS3</div>
+                          <div class="col s4 m2"><img alt="" src="images/sass.png" class="responsive-img">SASS</div>
+                          <div class="col s4 m2"><img alt="" src="images/bootstrap.png" class="responsive-img">Bootstrap</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card shadow m-4">
+                        <div class="card-content">
+                          <h4 class="brown-text light">Javascript</h4>
+                          <div class="row text-center">
+                            <div class="col s4 m2"><img alt="" src="images/javascript.png" class="responsive-img">Javascript</div>
+                            <div class="col s4 m2"><img alt="" src="images/jquery.png" class="responsive-img">Jquery</div>
+                            <div class="col s4 m2"><img alt="" src="images/angular.png" class="responsive-img">Angular</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card shadow m-4">
+                          <div class="card-content">
+                            <h4 class="brown-text light">Other</h4>
+                            <div class="row text-center">
+                              <div class="col s4 m2"><img alt="" src="images/github.png" class="responsive-img">Github</div>
+                              <div class="col s4 m2"><img alt="" src="images/backbase.png" class="responsive-img">Backbase</div>                              
+                            </div>
+                          </div>
+                        </div>
+              </section>
+
+              <section id="Highlights" class="section scrollspy">
+                <h3 class="card white-text teal">Highlights</h3>
+                <div class="card m-4 p-3 brown-text" style="font-size: 20px">
+                  <ul>
+                    <li>
+                        Awarded as good team player for motivating, inspiring and knowledge sharing approach.
+                    </li>
+                    <li>
+                        Quick learner and good team player.
+                    </li>
+                    <li>
+                        Exceeding expectations on delivery with maintaining code quality.
+                    </li>
+                  </ul>                    
+                </div>
+              </section>
+
+              <section id="education" class="section scrollspy">
+                <h3 class="card white-text teal">Education</h3>
+                <div class="row m-1">
+                  <div class="col-md-6">
+                    <div class="card shadow-sm p-3 my-3">
+                      <h4 class="teal-text">VIT University,Chennai</h4>
+                      <p>Master of Technology in computer science.</p>
+
+                      <h4 class="teal-text">Pune University,Maharashtra</h4>
+                      <p>Bachelor of computer science and engineering.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="card shadow-sm p-3 my-3">
+                          <h4 class="teal-text">Government polytechnic,Pune</h4>
+                          <p>Diploma in computer science and engineering.</p>
+
+                          <h4 class="teal-text">Maharashtra state board</h4>
+                          <p>S.S.C with distinction.</p>
+                      </div>
+                  </div>
+                </div>  
+              </section>
+
+              <section id="contact" class="section scrollspy">
+                <h3 class="card white-text teal m-1">Contact</h3> 
+                <div class="m-5">
+                <a href="mailto:shalini.bhandare79@gmail.com">              
+                <h4 class="teal-text mb-5"><i class="fa fa-envelope fa-fw"></i>
+                  shalini.bhandare79@gmail.com</h4>
+                </a> 
+
+                  <a href="https://www.linkedin.com/in/shalini-bhandare-b62b2782/">
+                    <h4 class="teal-text"><i class="fa fa-linkedin-square fa-fw"></i>
+                    https://www.linkedin.com/in/shalini-bhandare-b62b2782/</h4>
+                  </a>
+                </div>
+              </section>                         
+  
+  </div>
+  </main>
+  <!-- End demo content -->
+
+  
+  
+</body>
+</html>
